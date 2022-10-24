@@ -1,6 +1,6 @@
 root = true
 
-[{*.json,*.css}]
+[{*.json,*.css,*.scss}]
 charset = utf-8
 indent_style = tab
 indent_size = tab
