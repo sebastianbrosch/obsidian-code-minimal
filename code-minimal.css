@@ -1,0 +1,239 @@
+body {
+  --background-primary: rgb(40,40,40);
+  --background-secondary: rgb(25,25,25);
+  --icon-color-active: rgb(255,165,0);
+  --icon-color-danger: rgb(255,0,0);
+  --icon-color-default: rgb(200,200,200);
+  --icon-size: 15px;
+  --font-primary: "JetBrains Mono", Source Code Pro;
+  --font-primary-bold: "JetBrains Mono ExtraBold", Source Code Pro;
+  --link-external-color: rgb(130 210 232);
+  --link-color: rgb(130 210 232);
+  --file-line-width: 750px;
+  --blockquote-border-color: #aa933e;
+}
+
+.theme-dark * {
+  font-family: var(--font-primary);
+}
+.theme-dark .HyperMD-header-1,
+.theme-dark .markdown-preview-view h1 {
+  color: #fcce24;
+}
+.theme-dark .HyperMD-header-2,
+.theme-dark .markdown-preview-view h2 {
+  color: #fcce24;
+}
+.theme-dark .HyperMD-header-3,
+.theme-dark .markdown-preview-view h3 {
+  color: #C3C1F6;
+}
+.theme-dark .HyperMD-header-4,
+.theme-dark .markdown-preview-view h4 {
+  color: rgb(237, 228, 130);
+}
+.theme-dark .HyperMD-header-5,
+.theme-dark .markdown-preview-view h5 {
+  color: rgb(98, 222, 172);
+}
+.theme-dark .HyperMD-header-6,
+.theme-dark .markdown-preview-view h6 {
+  color: rgb(98, 222, 172);
+}
+.theme-dark .markdown-preview-view table thead th {
+  background: var(--background-secondary);
+  color: #ddd;
+  font-size: 1em;
+}
+.theme-dark .markdown-preview-view table tbody td {
+  vertical-align: middle;
+}
+.theme-dark .markdown-preview-view .contains-task-list {
+  padding-inline-start: 2.2em;
+}
+.theme-dark .math-inline mjx-container *,
+.theme-dark .math-block mjx-container * {
+  color: #C3C1F6;
+  font-family: MJXZERO, MJXTEX;
+}
+.theme-dark .math-inline mjx-container .TEX-V,
+.theme-dark .math-block mjx-container .TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+.theme-dark .math-inline mjx-container,
+.theme-dark .math-block mjx-container {
+  font-size: 1.3em;
+}
+.theme-dark .markdown-rendered button.copy-code-button {
+  font-family: var(--font-primary);
+}
+.theme-dark .markdown-rendered code {
+  font-family: var(--font-primary);
+}
+.theme-dark input[type=checkbox]:checked {
+  background-color: rgb(98, 222, 172);
+}
+.theme-dark .task-list-item .task-list-item-checkbox {
+  appearance: none;
+  box-sizing: border-box;
+  border: 1px solid #666;
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0;
+  outline: none;
+  margin-bottom: var(--size-0-5);
+  cursor: pointer;
+  filter: none;
+  top: 4px;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-inline-start: -31px;
+}
+.theme-dark .task-list-item .task-list-item-checkbox:checked {
+  border-color: rgb(98, 222, 172);
+}
+.theme-dark .task-list-item .task-list-item-checkbox:checked::after {
+  display: none;
+  visibility: hidden;
+}
+.theme-dark .task-list-item .task-list-item-checkbox:checked::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M7.74,15.63a1.45,1.45,0,0,1-1.06-.44L2.94,11.46A1.5,1.5,0,0,1,5.06,9.34L7.74,12l7.2-7.2a1.5,1.5,0,1,1,2.12,2.12L8.8,15.19A1.48,1.48,0,0,1,7.74,15.63Z' style='fill:%230c0c0c'/%3E%3C/svg%3E");
+}
+.theme-dark em, .theme-dark .cm-em {
+  color: rgb(237, 228, 130);
+  font-style: italic;
+}
+.theme-dark strong, .theme-dark .cm-strong {
+  color: #fcce24;
+  font-family: var(--font-primary-bold);
+  font-weight: bold;
+}
+.theme-dark .callout-icon .svg-icon {
+  margin-top: -3px;
+  margin-right: 5px;
+}
+.theme-dark a.tag {
+  background-color: var(--background-modifier-hover);
+  border-radius: 0;
+  color: #fcce24;
+  padding: 0.1em 0.3em 0.1em 0.3em;
+  border-radius: var(--radius-s);
+}
+.theme-dark .cm-hashtag.cm-hashtag-begin, .theme-dark .cm-hashtag.cm-hashtag-end {
+  background-color: var(--background-modifier-hover);
+  border-radius: 0;
+  color: #fcce24;
+}
+.theme-dark .cm-hashtag.cm-hashtag-begin {
+  padding: 0.1em 0 0.1em 0.3em;
+  border-bottom-left-radius: var(--radius-s);
+  border-top-left-radius: var(--radius-s);
+}
+.theme-dark .cm-hashtag.cm-hashtag-end {
+  padding: 0.1em 0.3em 0.1em 0;
+  border-bottom-right-radius: var(--radius-s);
+  border-top-right-radius: var(--radius-s);
+}
+.theme-dark .view-content .internal-link:hover,
+.theme-dark .view-content span.cm-hmd-internal-link:hover,
+.theme-dark .view-content .external-link:hover {
+  color: #fcce24;
+}
+.theme-dark input[type=search],
+.theme-dark .search-result-file-matches {
+  border-radius: 0;
+}
+.theme-dark input[type=search]:focus {
+  box-shadow: none;
+}
+.theme-dark .nav-header ~ .search-input-container {
+  width: calc(100% - var(--size-4-6));
+}
+.theme-dark .search-result-file-matched-text {
+  background-color: #fcce24;
+  color: black;
+  padding: 0 0.2em;
+}
+.theme-dark .markdown-rendered code {
+  color: #bbb;
+  background-color: #1d1d1d;
+  padding: 0.1em 0.4em;
+}
+.theme-dark pre[class*=language-] {
+  background-color: #1d1d1d;
+}
+.theme-dark .workspace-leaf-resize-handle:hover {
+  background-color: var(--icon-color-active);
+  border-color: var(--icon-color-active);
+}
+.theme-dark div.nav-folder-title[data-path="/"] {
+  text-transform: uppercase;
+}
+.theme-dark .clickable-icon.is-active {
+  background-color: var(--background-modifier-hover);
+}
+.theme-dark div[data-type=file-explorer] .nav-file.has-focus .nav-file-title {
+  box-shadow: none;
+}
+.theme-dark div[data-type=file-explorer] .nav-file .nav-file-title .nav-file-title-content {
+  line-height: 17px;
+}
+.theme-dark div[data-type=file-explorer] .nav-folder.has-focus .nav-folder-title {
+  box-shadow: none;
+}
+.theme-dark div[data-type=file-explorer] .nav-folder .nav-folder-title .nav-folder-title-content {
+  line-height: 17px;
+  padding-left: 22px;
+  position: relative;
+}
+.theme-dark div[data-type=file-explorer] .nav-folder .nav-folder-title .nav-folder-title-content::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23DADADA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2"></path></svg>');
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  height: var(--icon-size);
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: var(--icon-size);
+}
+.theme-dark div[data-type=file-explorer] .nav-folder .is-collapsed .nav-folder-title .nav-folder-title-content::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23DADADA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path><path d="M2 10h20"></path></svg>');
+}
+.theme-dark .titlebar .titlebar-button-container {
+  background-color: var(--background-secondary) !important;
+}
+.theme-dark .titlebar .titlebar-button-container .titlebar-button.mod-close:hover {
+  background-color: var(--background-modifier-hover);
+}
+.theme-dark .titlebar .titlebar-button-container .titlebar-button.mod-close:hover svg polygon {
+  stroke: var(--icon-color-danger);
+}
+.theme-dark .workspace-split.mod-root .view-content {
+  background-color: var(--background-primary);
+}
+.theme-dark .workspace .workspace-ribbon,
+.theme-dark .workspace .workspace-ribbon:before {
+  background-color: var(--background-secondary);
+}
+.theme-dark .workspace-tab-header-container {
+  background: var(--background-secondary);
+}
+.theme-dark .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-icon svg path,
+.theme-dark .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-icon svg circle,
+.theme-dark .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-icon svg line,
+.theme-dark .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-icon svg polygon {
+  stroke: var(--icon-color-default);
+}
+.theme-dark .workspace-tab-header.is-active .workspace-tab-header-inner-icon svg path,
+.theme-dark .workspace-tab-header.is-active .workspace-tab-header-inner-icon svg circle,
+.theme-dark .workspace-tab-header.is-active .workspace-tab-header-inner-icon svg line,
+.theme-dark .workspace-tab-header.is-active .workspace-tab-header-inner-icon svg polygon {
+  stroke: var(--icon-color-active);
+}

@@ -1,0 +1,1 @@
+copy "code-minimal.css" "D:\obsidian\dev-vault\.obsidian\themes\code-minimal.css"
