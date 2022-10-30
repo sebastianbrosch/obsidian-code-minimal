@@ -11,6 +11,13 @@ body {
 	--link-color: rgb(130 210 232);
 	--file-line-width: 750px;
 	--blockquote-border-color: #aa933e;
+
+	--h1-font: 'JetBrains Mono ExtraBold', Source Code Pro;
+	--h2-font: 'JetBrains Mono ExtraBold', Source Code Pro;
+	--h3-font: 'JetBrains Mono ExtraBold', Source Code Pro;
+	--h4-font: 'JetBrains Mono ExtraBold', Source Code Pro;
+	--h5-font: 'JetBrains Mono ExtraBold', Source Code Pro;
+	--h6-font: 'JetBrains Mono ExtraBold', Source Code Pro;
 }
 .theme-dark {
 
@@ -76,21 +83,17 @@ body {
 	input[type=checkbox]:checked {
 		background-color: rgb(98, 222, 172);
 	}
+	input[type=checkbox]:hover,
+	input[type=checkbox]:active,
+	input[type=checkbox]:focus {
+		border-color: var(--checkbox-border-color);
+	}
 	.task-list-item {
 		.task-list-item-checkbox {
-			appearance: none;
-			box-sizing: border-box;
-			border: 1px solid #666;
-			position: relative;
 			width: 1.5em;
 			height: 1.5em;
-			margin: 0;
-			outline: none;
-			margin-bottom: var(--size-0-5);
 			cursor: pointer;
-			filter: none;
 			top: 4px;
-			border-radius: 4px;
 			margin-right: 10px;
 			margin-inline-start: -31px;
 
@@ -106,7 +109,6 @@ body {
 					position: absolute;
 					width: 100%;
 					height: 100%;
-
 					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M7.74,15.63a1.45,1.45,0,0,1-1.06-.44L2.94,11.46A1.5,1.5,0,0,1,5.06,9.34L7.74,12l7.2-7.2a1.5,1.5,0,1,1,2.12,2.12L8.8,15.19A1.48,1.48,0,0,1,7.74,15.63Z' style='fill:%230c0c0c'/%3E%3C/svg%3E");
 				}
 			}
@@ -175,7 +177,7 @@ body {
 	}
 	.markdown-rendered code {
     color: #bbb;
-    background-color: #1d1d1d;
+    background-color: #1d1f21;
     padding: 0.1em 0.4em;
 	}
 	pre[class*="language-"] {
@@ -274,4 +276,10 @@ body {
 			}
 		}
 	}
+	.nav-file-title-content {
+		text-overflow: clip;
+	}
+
+	//VS Code Dark+,
+	@import 'prism-code.scss';
 }

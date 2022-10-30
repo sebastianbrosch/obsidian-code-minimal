@@ -11,8 +11,23 @@ body {
   --link-color: rgb(130 210 232);
   --file-line-width: 750px;
   --blockquote-border-color: #aa933e;
+  --h1-font: "JetBrains Mono ExtraBold", Source Code Pro;
+  --h2-font: "JetBrains Mono ExtraBold", Source Code Pro;
+  --h3-font: "JetBrains Mono ExtraBold", Source Code Pro;
+  --h4-font: "JetBrains Mono ExtraBold", Source Code Pro;
+  --h5-font: "JetBrains Mono ExtraBold", Source Code Pro;
+  --h6-font: "JetBrains Mono ExtraBold", Source Code Pro;
 }
 
+.theme-dark {
+  /**
+   * atom-dark theme for `prism.js`
+   * Based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax
+   * @author Joe Gibson (@gibsjose)
+   */
+  /* Code blocks */
+  /* Inline code */
+}
 .theme-dark * {
   font-family: var(--font-primary);
 }
@@ -73,20 +88,16 @@ body {
 .theme-dark input[type=checkbox]:checked {
   background-color: rgb(98, 222, 172);
 }
+.theme-dark input[type=checkbox]:hover,
+.theme-dark input[type=checkbox]:active,
+.theme-dark input[type=checkbox]:focus {
+  border-color: var(--checkbox-border-color);
+}
 .theme-dark .task-list-item .task-list-item-checkbox {
-  appearance: none;
-  box-sizing: border-box;
-  border: 1px solid #666;
-  position: relative;
   width: 1.5em;
   height: 1.5em;
-  margin: 0;
-  outline: none;
-  margin-bottom: var(--size-0-5);
   cursor: pointer;
-  filter: none;
   top: 4px;
-  border-radius: 4px;
   margin-right: 10px;
   margin-inline-start: -31px;
 }
@@ -161,7 +172,7 @@ body {
 }
 .theme-dark .markdown-rendered code {
   color: #bbb;
-  background-color: #1d1d1d;
+  background-color: #1d1f21;
   padding: 0.1em 0.4em;
 }
 .theme-dark pre[class*=language-] {
@@ -236,4 +247,117 @@ body {
 .theme-dark .workspace-tab-header.is-active .workspace-tab-header-inner-icon svg line,
 .theme-dark .workspace-tab-header.is-active .workspace-tab-header-inner-icon svg polygon {
   stroke: var(--icon-color-active);
+}
+.theme-dark .nav-file-title-content {
+  text-overflow: clip;
+}
+.theme-dark code[class*=language-],
+.theme-dark pre[class*=language-] {
+  color: #c5c8c6;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: "JetBrains Mono", Inconsolata, Monaco, Consolas, "Courier New", Courier, monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+.theme-dark pre[class*=language-] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+.theme-dark :not(pre) > code[class*=language-],
+.theme-dark pre[class*=language-] {
+  background: #1d1f21;
+}
+.theme-dark :not(pre) > code[class*=language-] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+}
+.theme-dark .token.comment,
+.theme-dark .token.prolog,
+.theme-dark .token.doctype,
+.theme-dark .token.cdata {
+  color: #7C7C7C;
+}
+.theme-dark .token.punctuation {
+  color: #c5c8c6;
+}
+.theme-dark .namespace {
+  opacity: 0.7;
+}
+.theme-dark .token.property,
+.theme-dark .token.keyword,
+.theme-dark .token.tag {
+  color: #96CBFE;
+}
+.theme-dark .token.class-name {
+  color: #FFFFB6;
+  text-decoration: underline;
+}
+.theme-dark .token.boolean,
+.theme-dark .token.constant {
+  color: #99CC99;
+}
+.theme-dark .token.symbol,
+.theme-dark .token.deleted {
+  color: #f92672;
+}
+.theme-dark .token.number {
+  color: #FF73FD;
+}
+.theme-dark .token.selector,
+.theme-dark .token.attr-name,
+.theme-dark .token.string,
+.theme-dark .token.char,
+.theme-dark .token.builtin,
+.theme-dark .token.inserted {
+  color: #A8FF60;
+}
+.theme-dark .token.variable {
+  color: #C6C5FE;
+}
+.theme-dark .token.operator {
+  color: #EDEDED;
+}
+.theme-dark .token.entity {
+  color: #FFFFB6;
+  cursor: help;
+}
+.theme-dark .token.url {
+  color: #96CBFE;
+}
+.theme-dark .language-css .token.string,
+.theme-dark .style .token.string {
+  color: #87C38A;
+}
+.theme-dark .token.atrule,
+.theme-dark .token.attr-value {
+  color: #F9EE98;
+}
+.theme-dark .token.function {
+  color: #DAD085;
+}
+.theme-dark .token.regex {
+  color: #E9C062;
+}
+.theme-dark .token.important {
+  color: #fd971f;
+}
+.theme-dark .token.important,
+.theme-dark .token.bold {
+  font-weight: bold;
+}
+.theme-dark .token.italic {
+  font-style: italic;
 }
