@@ -18,6 +18,8 @@ body {
 	--h4-font: 'JetBrains Mono ExtraBold', Source Code Pro;
 	--h5-font: 'JetBrains Mono ExtraBold', Source Code Pro;
 	--h6-font: 'JetBrains Mono ExtraBold', Source Code Pro;
+
+	--code-size: 0.9em;
 }
 .theme-dark {
 
@@ -26,27 +28,27 @@ body {
 	}
 	.HyperMD-header-1,
 	.markdown-preview-view h1 {
-		color: #fcce24;
+		color: #f6a700;
 	}
 	.HyperMD-header-2,
 	.markdown-preview-view h2 {
-		color: #fcce24;
+		color: #cfc247;
 	}
 	.HyperMD-header-3,
 	.markdown-preview-view h3 {
-		color: #C3C1F6;
+		color: #8ea17f;
 	}
 	.HyperMD-header-4,
 	.markdown-preview-view h4 {
-		color: rgb(237,228,130);
+		color: #89dde9;
 	}
 	.HyperMD-header-5,
 	.markdown-preview-view h5 {
-		color: rgb(98,222,172);
+		color: #f2f2f2;
 	}
 	.HyperMD-header-6,
 	.markdown-preview-view h6 {
-		color: rgb(98,222,172);
+		color: #f2f2f2;
 	}
 	.markdown-preview-view table thead th {
 		background: var(--background-secondary);
@@ -278,6 +280,11 @@ body {
 	}
 	.nav-file-title-content {
 		text-overflow: clip;
+	}
+
+	.markdown-rendered hr {
+    border-style: dashed;
+    border-bottom: 0;
 	}
 
 	//VS Code Dark+,

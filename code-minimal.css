@@ -17,6 +17,7 @@ body {
   --h4-font: "JetBrains Mono ExtraBold", Source Code Pro;
   --h5-font: "JetBrains Mono ExtraBold", Source Code Pro;
   --h6-font: "JetBrains Mono ExtraBold", Source Code Pro;
+  --code-size: 0.9em;
 }
 
 .theme-dark {
@@ -33,27 +34,27 @@ body {
 }
 .theme-dark .HyperMD-header-1,
 .theme-dark .markdown-preview-view h1 {
-  color: #fcce24;
+  color: #f6a700;
 }
 .theme-dark .HyperMD-header-2,
 .theme-dark .markdown-preview-view h2 {
-  color: #fcce24;
+  color: #cfc247;
 }
 .theme-dark .HyperMD-header-3,
 .theme-dark .markdown-preview-view h3 {
-  color: #C3C1F6;
+  color: #8ea17f;
 }
 .theme-dark .HyperMD-header-4,
 .theme-dark .markdown-preview-view h4 {
-  color: rgb(237, 228, 130);
+  color: #89dde9;
 }
 .theme-dark .HyperMD-header-5,
 .theme-dark .markdown-preview-view h5 {
-  color: rgb(98, 222, 172);
+  color: #f2f2f2;
 }
 .theme-dark .HyperMD-header-6,
 .theme-dark .markdown-preview-view h6 {
-  color: rgb(98, 222, 172);
+  color: #f2f2f2;
 }
 .theme-dark .markdown-preview-view table thead th {
   background: var(--background-secondary);
@@ -250,6 +251,10 @@ body {
 }
 .theme-dark .nav-file-title-content {
   text-overflow: clip;
+}
+.theme-dark .markdown-rendered hr {
+  border-style: dashed;
+  border-bottom: 0;
 }
 .theme-dark code[class*=language-],
 .theme-dark pre[class*=language-] {
