@@ -18,6 +18,7 @@ body {
   --h5-font: "JetBrains Mono ExtraBold", Source Code Pro;
   --h6-font: "JetBrains Mono ExtraBold", Source Code Pro;
   --code-size: 0.9em;
+  --code-background: #1d1f21;
 }
 
 .theme-dark {
@@ -32,29 +33,35 @@ body {
 .theme-dark * {
   font-family: var(--font-primary);
 }
-.theme-dark .HyperMD-header-1,
+.theme-dark .cm-editor .HyperMD-header.HyperMD-header-1 *,
 .theme-dark .markdown-preview-view h1 {
   color: #f6a700;
+  font-family: var(--h1-font);
 }
-.theme-dark .HyperMD-header-2,
+.theme-dark .cm-editor .HyperMD-header.HyperMD-header-2 *,
 .theme-dark .markdown-preview-view h2 {
   color: #cfc247;
+  font-family: var(--h2-font);
 }
-.theme-dark .HyperMD-header-3,
+.theme-dark .cm-editor .HyperMD-header.HyperMD-header-3 *,
 .theme-dark .markdown-preview-view h3 {
   color: #8ea17f;
+  font-family: var(--h3-font);
 }
-.theme-dark .HyperMD-header-4,
+.theme-dark .cm-editor .HyperMD-header.HyperMD-header-4 *,
 .theme-dark .markdown-preview-view h4 {
   color: #89dde9;
+  font-family: var(--h4-font);
 }
-.theme-dark .HyperMD-header-5,
+.theme-dark .cm-editor .HyperMD-header.HyperMD-header-5 *,
 .theme-dark .markdown-preview-view h5 {
   color: #f2f2f2;
+  font-family: var(--h5-font);
 }
-.theme-dark .HyperMD-header-6,
+.theme-dark .cm-editor .HyperMD-header.HyperMD-header-6 *,
 .theme-dark .markdown-preview-view h6 {
   color: #f2f2f2;
+  font-family: var(--h6-font);
 }
 .theme-dark .markdown-preview-view table thead th {
   background: var(--background-secondary);
@@ -66,6 +73,11 @@ body {
 }
 .theme-dark .markdown-preview-view .contains-task-list {
   padding-inline-start: 2.2em;
+}
+.theme-dark .markdown-preview-view pre {
+  padding: 1rem;
+  margin: 0.5em 0;
+  overflow-x: auto;
 }
 .theme-dark .math-inline mjx-container *,
 .theme-dark .math-block mjx-container * {

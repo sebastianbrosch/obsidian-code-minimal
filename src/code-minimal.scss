@@ -20,35 +20,42 @@ body {
 	--h6-font: 'JetBrains Mono ExtraBold', Source Code Pro;
 
 	--code-size: 0.9em;
+	--code-background: #1d1f21;
 }
 .theme-dark {
 
 	* {
 		font-family: var(--font-primary);
 	}
-	.HyperMD-header-1,
+	.cm-editor .HyperMD-header.HyperMD-header-1 *,
 	.markdown-preview-view h1 {
 		color: #f6a700;
+		font-family: var(--h1-font);
 	}
-	.HyperMD-header-2,
+	.cm-editor .HyperMD-header.HyperMD-header-2 *,
 	.markdown-preview-view h2 {
 		color: #cfc247;
+		font-family: var(--h2-font);
 	}
-	.HyperMD-header-3,
+	.cm-editor .HyperMD-header.HyperMD-header-3 *,
 	.markdown-preview-view h3 {
 		color: #8ea17f;
+		font-family: var(--h3-font);
 	}
-	.HyperMD-header-4,
+	.cm-editor .HyperMD-header.HyperMD-header-4 *,
 	.markdown-preview-view h4 {
 		color: #89dde9;
+		font-family: var(--h4-font);
 	}
-	.HyperMD-header-5,
+	.cm-editor .HyperMD-header.HyperMD-header-5 *,
 	.markdown-preview-view h5 {
 		color: #f2f2f2;
+		font-family: var(--h5-font);
 	}
-	.HyperMD-header-6,
+	.cm-editor .HyperMD-header.HyperMD-header-6 *,
 	.markdown-preview-view h6 {
 		color: #f2f2f2;
+		font-family: var(--h6-font);
 	}
 	.markdown-preview-view table thead th {
 		background: var(--background-secondary);
@@ -60,6 +67,11 @@ body {
 	}
 	.markdown-preview-view .contains-task-list {
 		padding-inline-start: 2.2em;
+	}
+	.markdown-preview-view pre {
+		padding: 1rem;
+		margin: 0.5em 0;
+		overflow-x: auto;
 	}
 
 	.math-inline mjx-container *,
