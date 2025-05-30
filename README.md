@@ -1,2 +1,2 @@
-# Code Minimal
-A minimalistic Obsidian theme for Coders building a Knowledge Base.
+# Obsidian Theme - Code Minimal
+A minimalistic Obsidian theme for software developers and software engineers who are building a knowledge base.

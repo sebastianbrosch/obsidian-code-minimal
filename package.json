@@ -2,9 +2,9 @@
 	"name": "code-minimal",
 	"version": "1.0.0",
 	"devDependencies": {
-		"sass": "^1.55.0"
+		"sass": "^1.89.0"
 	},
 	"scripts": {
-    "scss-dev": "sass --no-source-map --style=expanded --watch ./src/code-minimal.scss:./code-minimal.css"
+    "scss-dev": "sass --no-source-map --style=expanded --watch ./src/theme.scss:./theme.css"
   }
 }
