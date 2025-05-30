@@ -2,9 +2,12 @@
 	"name": "code-minimal",
 	"version": "1.0.0",
 	"devDependencies": {
-		"sass": "^1.89.0"
+		"sass": "^1.89.0",
+		"stylelint": "^16.20.0",
+		"stylelint-scss": "^6.12.0"
 	},
 	"scripts": {
-    "scss-dev": "sass --no-source-map --style=expanded --watch ./src/theme.scss:./theme.css"
-  }
+		"sass": "sass --no-source-map --style=expanded --watch ./src/theme.scss:./theme.css",
+		"stylelint": "stylelint **/*.{scss,css}"
+	}
 }
