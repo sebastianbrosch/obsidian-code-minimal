@@ -14,7 +14,7 @@ body {
   --font-primary-bold: "JetBrains Mono ExtraBold", Source Code Pro;
   --link-external-color: rgb(130 210 232);
   --link-color: rgb(130 210 232);
-  --file-line-width: 750px;
+  --file-line-width: 900px;
   --blockquote-border-color: #aa933e;
   --h1-font: "JetBrains Mono ExtraBold", Source Code Pro;
   --h1-color: #f6a700;
@@ -82,11 +82,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-body:not(.is-ios):not(.is-android) input[type=date],
-body:not(.is-ios):not(.is-android) input[type=datetime-local] {
-  padding-inline-start: var(--size-4-2);
-}
-
 .theme-dark {
   --background-modifier-cover: rgba(10, 10, 10, 0.9);
   font-family: var(--font-primary);
@@ -149,15 +144,16 @@ code[class*=language-]:hover {
   color: var(--text-normal);
 }
 
-.multi-select-pill {
-  line-height: 1.2;
+.metadata-property-value[data-property-type=tags] .multi-select-pill,
+.metadata-property-value[data-property-type=aliases] .multi-select-pill {
+  line-height: var(--line-height-tight);
 }
-
-.multi-select-pill .multi-select-pill-content {
+.metadata-property-value[data-property-type=tags] .multi-select-pill .multi-select-pill-content,
+.metadata-property-value[data-property-type=aliases] .multi-select-pill .multi-select-pill-content {
   margin: 0.1rem 0.3rem;
 }
-
-.multi-select-pill .multi-select-pill-remove-button {
+.metadata-property-value[data-property-type=tags] .multi-select-pill .multi-select-pill-remove-button,
+.metadata-property-value[data-property-type=aliases] .multi-select-pill .multi-select-pill-remove-button {
   display: none;
   visibility: hidden;
 }
@@ -300,4 +296,9 @@ pre[class*=language-] {
 
 .math.math-block mjx-container[jax=CHTML][display=true] {
   text-align: left;
+}
+
+body:not(.is-ios):not(.is-android) input[type=date]:not([disabled=true]),
+body:not(.is-ios):not(.is-android) input[type=datetime-local]:not([disabled=true]) {
+  padding-left: var(--size-4-2);
 }
