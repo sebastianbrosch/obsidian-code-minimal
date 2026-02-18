@@ -65,6 +65,8 @@ body {
   --status-bar-radius: 0;
   --link-external-decoration: none;
   --link-decoration: none;
+  --table-header-background: var(--background-secondary);
+  --table-header-background-hover: var(--background-secondary);
 }
 
 .metadata-property[data-property-key=tags] {
@@ -247,16 +249,6 @@ div[data-type=file-explorer] .nav-folder .is-collapsed .nav-folder-title .nav-fo
 .markdown-rendered.show-indentation-guide li > ul::before {
   display: none;
   visibility: hidden;
-}
-
-.markdown-rendered thead tr > th:empty {
-  height: 0;
-  padding: 0;
-  border-top: 0;
-}
-
-.markdown-reading-view .markdown-rendered table thead th {
-  background: var(--background-secondary);
 }
 
 .modal-container.mod-dim .modal {
