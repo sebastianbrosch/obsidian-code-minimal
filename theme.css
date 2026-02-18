@@ -294,3 +294,7 @@ body:not(.is-ios):not(.is-android) input[type=date]:not([disabled=true]),
 body:not(.is-ios):not(.is-android) input[type=datetime-local]:not([disabled=true]) {
   padding-left: var(--size-4-2);
 }
+
+.markdown-rendered div:is(.el-div, .el-blockquote) + div > :is(h1, h2, h3, h4, h5, h6) {
+  margin-top: var(--heading-spacing);
+}
