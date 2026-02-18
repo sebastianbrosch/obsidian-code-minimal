@@ -298,3 +298,7 @@ body:not(.is-ios):not(.is-android) input[type=datetime-local]:not([disabled=true
 .markdown-rendered div:is(.el-div, .el-blockquote) + div > :is(h1, h2, h3, h4, h5, h6) {
   margin-top: var(--heading-spacing);
 }
+
+.is-mobile .metadata-content {
+  background-color: var(--background-primary);
+}
