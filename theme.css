@@ -303,3 +303,13 @@ body:not(.is-ios):not(.is-android) input[type=datetime-local]:not([disabled=true
   margin-block-start: 0;
   margin-block-end: 0;
 }
+
+div.el-pre {
+  position: relative;
+}
+div.el-pre pre {
+  position: unset;
+}
+div.el-pre pre button {
+  right: 0;
+}

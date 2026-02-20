@@ -307,3 +307,16 @@ body:not(.is-ios):not(.is-android) input[type="datetime-local"]:not([disabled="t
   margin-block-start: 0;
   margin-block-end: 0;
 }
+
+// make the copy code button stay on the top right corner.
+div.el-pre {
+  position: relative;
+
+  pre {
+    position: unset;
+
+    button {
+      right: 0;
+    }
+  }
+}
